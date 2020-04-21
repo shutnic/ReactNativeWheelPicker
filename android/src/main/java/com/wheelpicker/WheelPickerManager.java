@@ -141,6 +141,20 @@ public class WheelPickerManager extends SimpleViewManager<LoopView> implements L
         }
     }
 
+    @ReactProp(name = "itemCount")
+    public void setItemCount(LoopView wheelPicker, int itemCount) {
+        if (wheelPicker!=null){
+            wheelPicker.setItemCount(itemCount);
+        }
+    }
+
+    @ReactProp(name = "lineSpacingMultiplier")
+    public void setLineSpacingMultiplier(LoopView wheelPicker, float value) {
+        if (wheelPicker!=null){
+            wheelPicker.setLineSpacingMultiplier(value);
+        }
+    }
+
     @ReactProp(name = "backgroundColor")
     public void setBackgroundColor(LoopView wheelPicker, String backgroundColor) {
         if (wheelPicker!=null){

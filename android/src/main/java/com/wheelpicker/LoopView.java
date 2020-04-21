@@ -407,6 +407,14 @@ public class LoopView extends View {
         paintC.setStrokeWidth(width);
     }
 
+    public final void setItemCount(int count){
+        itemCount = count;
+    }
+
+    public final void setLineSpacingMultiplier(float value){
+        lineSpacingMultiplier = value;
+    }
+
     public final void hideIndicator() {
         paintC.setColor(Color.TRANSPARENT);
     }
